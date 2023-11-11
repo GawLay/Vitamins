@@ -26,15 +26,12 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun listener() {
         lifecycleScope.launch {
             EventDispatcher.dataFlow.collectLatest {
-                Log.e("EVETN", "TOGGLE ${it}")
                 when (it) {
                     is MainEvent.UpdateProgressValue -> {
-                        Log.e("EVETN", "value ${it.progressValue}")
                         binding.progressIndicator.setProgressCompat(it.progressValue, true)
                     }
 
                     is MainEvent.ToggleIndicator -> {
-                        Log.e("EVETN", "TOGGLE ${it.flag}")
                         if (it.flag) {
                             binding.progressIndicator.visibleExt()
                         } else {
