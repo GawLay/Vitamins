@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_welcome"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.codigo.vitamins.ui.welcome.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_healthConcernFragment"
+            app:destination="@id/healthConcernFragment"
+            app:enterAnim="@anim/shared_right_in"
+            app:exitAnim="@anim/shared_left_out"
+            app:popEnterAnim="@anim/shared_left_in"
+            app:popExitAnim="@anim/shared_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/healthConcernFragment"
+        android:name="com.codigo.vitamins.ui.healthConcerns.HealthConcernFragment"
+        android:label="HealthConcernFragment"
+        tools:layout="@layout/fragment_nutrients">
+        <action
+            android:id="@+id/action_healthConcernFragment_to_dietFragment"
+            app:destination="@id/dietFragment"
+            app:enterAnim="@anim/shared_right_in"
+            app:exitAnim="@anim/shared_left_out"
+            app:popEnterAnim="@anim/shared_left_in"
+            app:popExitAnim="@anim/shared_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/dietFragment"
+        android:name="com.codigo.vitamins.ui.diets.DietFragment"
+        android:label="DietFragment"
+        tools:layout="@layout/fragment_diets">
+        <argument
+            android:name="DataToPrint"
+            app:argType="com.codigo.vitamins.data.model.DataToPrint" />
+        <action
+            android:id="@+id/action_dietFragment_to_allergiesFragment"
+            app:destination="@id/allergiesFragment"
+            app:enterAnim="@anim/shared_right_in"
+            app:exitAnim="@anim/shared_left_out"
+            app:popEnterAnim="@anim/shared_left_in"
+            app:popExitAnim="@anim/shared_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/allergiesFragment"
+        android:name="com.codigo.vitamins.ui.allergies.AllergiesFragment"
+        android:label="AllergiesFragment"
+        tools:layout="@layout/fragment_allergies">
+        <argument
+            android:name="DataToPrint"
+            app:argType="com.codigo.vitamins.data.model.DataToPrint" />
+        <action
+            android:id="@+id/action_allergiesFragment_to_personalizeFragment"
+            app:destination="@id/personalizeFragment"
+            app:enterAnim="@anim/shared_right_in"
+            app:exitAnim="@anim/shared_left_out"
+            app:popEnterAnim="@anim/shared_left_in"
+            app:popExitAnim="@anim/shared_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalizeFragment"
+        android:name="com.codigo.vitamins.ui.personalized.PersonalizeFragment"
+        android:label="PersonalizeFragment"
+        tools:layout="@layout/fragment_personalize_vitamin">
+        <argument
+            android:name="DataToPrint"
+            app:argType="com.codigo.vitamins.data.model.DataToPrint" />
+    </fragment>
+</navigation>

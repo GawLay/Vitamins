@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/btnHeight"
+    android:background="@drawable/bg_rounded_solid">
+
+
+    <TextView
+        android:id="@+id/tv_chip"
+        style="@style/VitaminChipStyle.Selected"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Selected" />
+
+    <ImageView
+        android:id="@+id/iv_prioritize"
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="@dimen/iconSize"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:src="@drawable/ic_baseline_prioritize_24"
+        app:layout_constraintBottom_toBottomOf="@id/tv_chip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_chip"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

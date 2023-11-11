@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vitamins_welcome_title">Welcome to DailVita</string>
+    <string name="vitamins_welcome_body">Hello, we are here to make your life healthier and happier</string>
+    <string name="vitamins_welcome_requirement">We will ask couple of questions to better understand your vitamin need.</string>
+    <string name="vitamins_select_nutrients">Select the top health concerns* \n (up to 5)</string>
+    <string name="vitamins_prioritize">Prioritize</string>
+    <string name="vitamins_select_diets">Select the diets you follow</string>
+    <string name="vitamins_allergies_description">Write any specific allergies or sensitivity towards specific things.(optional)</string>
+    <string name="vitamins_daily_exposure">Is your daily exposure to sun is limited?</string>
+    <string name="vitamins_current_smoke">Do you current smoke (Tobacco or marijuana)</string>
+    <string name="vitamins_alcoholic">On average, how many alcoholic beverages do you have a week?</string>
+    <string name="vitamins_my_personalize">Get my personalized vitamins</string>
+    <string name="vitamins_alcohol_first_level">0 – 1</string>
+    <string name="vitamins_alcohol_second_level">2 – 5</string>
+    <string name="vitamins_alcohol_third_level">5+</string>
+</resources>

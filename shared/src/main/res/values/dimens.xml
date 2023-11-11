@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">@dimen/_20ssp</dimen>
+    <dimen name="regularSize">@dimen/_17ssp</dimen>
+    <dimen name="descriptionSize">@dimen/_15ssp</dimen>
+    <dimen name="btnHeight">@dimen/_50sdp</dimen>
+    <dimen name="chipHeight">@dimen/_40sdp</dimen>
+    <dimen name="chipMinWidth">@dimen/_65sdp</dimen>
+    <dimen name="iconSize">@dimen/_24sdp</dimen>
+</resources>

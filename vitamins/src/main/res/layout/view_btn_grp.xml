@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        style="@style/AppButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btnHeight"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/shared_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        style="@style/AppButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btnHeight"
+        android:text="@string/shared_next"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBack" />
+</androidx.constraintlayout.widget.ConstraintLayout>

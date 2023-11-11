@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_chip"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/chipHeight"
+    android:background="@drawable/chip_item_normal"
+    android:gravity="center"
+    android:minWidth="@dimen/chipMinWidth"
+    android:paddingHorizontal="@dimen/_4sdp"
+    tools:text="Chip1" />

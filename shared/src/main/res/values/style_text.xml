@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleFont" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">?titleTextColor</item>
+    </style>
+
+    <style name="BodyFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">?bodyTextColor</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="TitleFont">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+    </style>
+
+    <style name="BodyTextStyle" parent="BodyFont">
+        <item name="android:textSize">@dimen/regularSize</item>
+    </style>
+
+    <style name="DescriptionTextStyle" parent="BodyFont">
+        <item name="android:textSize">@dimen/descriptionSize</item>
+    </style>
+</resources>

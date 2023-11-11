@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="VitaminTitleTextStyle" parent="TitleTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/_4sdp</item>
+    </style>
+
+    <style name="VitaminBodyTextStyle" parent="BodyTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/_4sdp</item>
+    </style>
+
+    <style name="VitaminChoicesTextStyle" parent="DescriptionTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/_4sdp</item>
+    </style>
+
+    <style name="VitaminChipStyle" parent="DescriptionTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/chipHeight</item>
+        <item name="android:minWidth">@dimen/chipMinWidth</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_4sdp</item>
+    </style>
+
+   <style name="VitaminChipStyle.Selected">
+       <item name="android:background">@drawable/chip_item_selected</item>
+   </style>
+    <style name="VitaminChipStyle.Normal">
+        <item name="android:background">@drawable/chip_item_normal</item>
+    </style>
+</resources>

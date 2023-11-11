@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:descendantFocusability="afterDescendants"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp"
+        tools:theme="@style/Base.Theme.HealthCare">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/VitaminBodyTextStyle"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="@string/vitamins_select_nutrients"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_healthConcerns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_health_concern"
+            tools:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/tv_prioritize"
+            style="@style/VitaminTitleTextStyle"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/vitamins_prioritize"
+            app:layout_constraintEnd_toEndOf="@+id/rc_healthConcerns"
+            app:layout_constraintStart_toStartOf="@+id/rc_healthConcerns"
+            app:layout_constraintTop_toBottomOf="@+id/rc_healthConcerns" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_prioritize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_prioritize"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_prioritize" />
+
+        <include
+            android:id="@+id/include_btnGrp"
+            layout="@layout/view_btn_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

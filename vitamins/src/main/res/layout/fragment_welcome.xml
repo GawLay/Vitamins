@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/_12sdp"
+    tools:theme="@style/Base.Theme.HealthCare">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/VitaminTitleTextStyle"
+        android:text="@string/vitamins_welcome_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_body"
+        style="@style/VitaminBodyTextStyle"
+        android:text="@string/vitamins_welcome_body"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_hangOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:src="@drawable/welcom_hang_out"
+        app:layout_constraintEnd_toEndOf="@+id/tv_body"
+        app:layout_constraintStart_toStartOf="@+id/tv_body"
+        app:layout_constraintTop_toBottomOf="@+id/tv_body" />
+
+    <TextView
+        android:id="@+id/tv_req"
+        style="@style/VitaminBodyTextStyle"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/vitamins_welcome_requirement"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/iv_hangOut" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:text="@string/shared_get_started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_req"
+        tools:layout_editor_absoluteX="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

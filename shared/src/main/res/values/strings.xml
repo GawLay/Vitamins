@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HealthCare</string>
+    <string name="shared_get_started">Get Started</string>
+    <string name="shared_next">Next</string>
+    <string name="shared_back">Back</string>
+    <string name="shared_yes">Yes</string>
+    <string name="shared_no">No</string>
+</resources>
